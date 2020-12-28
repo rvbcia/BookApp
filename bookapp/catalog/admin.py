@@ -4,8 +4,8 @@ from .models import BookModel
 
 # Define the admin class
 class BookAdmin(admin.ModelAdmin):
-    list_display = ('title', 'author', 'ISBN', 'pub_date', 'cover', 'no_pages', 'language')
-    list_filter = ('title', 'author', 'language', 'pub_date')
+    list_display = ['title', 'author', 'ISBN', 'pub_date', 'cover', 'no_pages', 'language']
+    list_filter = ['title', 'author', 'language', 'pub_date']
     pass
 
 
